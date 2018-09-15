@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>color guessing</title>
+	<style type="text/css">
+		#container{
+			max-width: 600px;	
+			margin: 20px auto 0 auto;
+
+		}
+		.square{
+			width: 30%;
+			padding-bottom: 30%;
+			background-color: #2AAE44;
+			margin: 1.66px;
+			float: left;
+			border-radius: 35%;
+			transition: background 0.6s;
+		}
+		body{
+			background-color: #4D5762;
+			margin: 0px;
+		}
+		#sub{
+			background-color: white;
+			text-align: center;;
+			text-transform: uppercase;
+			font-family: Titan One;
+		}
+		#header{
+			font-family: Titan One;
+			background-color: #2F73B4;
+			height: 70px;
+			text-align: center;
+
+		}
+		#answer{
+			display: inline-block;
+			width: 25%;
+		}
+
+		#viewColor{
+				font-size: 50px;
+
+		}
+
+		button{
+			background-color: white;
+			border: none;
+			font-weight: bold;
+			transition: all 0.6s;
+			height:24px;
+		}
+		.selected{
+			background-color: #2F73B4;
+
+		}
+
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+</head>
+<body>
+	<div id = "header">
+		<span id = "viewColor"></span>
+	</div>
+	<div id="sub">
+		<button id = "b1">NEW GAME</button>
+		<span id = "answer"></span>
+		<button id = "b2">EASY</button>
+		<button id = "b3">HARD</button>
+	</div>
+	<div id = "container">
+	<div class = "square"></div>
+	<div class = "square"></div>
+	<div class = "square"></div>
+	<div class = "square"></div>
+	<div class = "square"></div>
+	<div class = "square"></div>
+
+
+
+<script type="text/javascript" src="color.js"></script>
+</body>
+</html>
